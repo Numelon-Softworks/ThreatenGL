@@ -5,3 +5,4 @@ A Minecraft Fabric mod that ***threatens*** OpenGL to use version 4.6 instead of
 >
 > ThreatenGL: use version 4.6... or else..! 😡🔪
 
+## 🤔 How does it work?
