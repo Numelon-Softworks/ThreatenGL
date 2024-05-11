@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "threatengl",
+	"version": "${version}",
+	"name": "ThreatenGL",
+	"description": "Threatens minecraft to use a different version of OpenGL.",
+	"authors": [
+		"Numelon Softworks",
+		"Richy Z"
+	],
+	"contact": {
+		"homepage": "https://numelon.com",
+		"sources": "https://github.com/FabricMC/Numelon-Softworks/ThreatenGL"
+	},
+	"icon": "assets/threatengl/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.numelon.threatengl.ThreatenGL"
+		]
+	},
+	"mixins": [
+		"threatengl.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": ">=1.17"
+	}
+}
