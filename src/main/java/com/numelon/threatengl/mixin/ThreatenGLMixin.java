@@ -14,6 +14,7 @@ import org.lwjgl.glfw.GLFW;
 public class ThreatenGLMixin {
 	@Redirect(method = "<init>", at = @At(value = "INVOKE", target = "Lorg/lwjgl/glfw/GLFW;glfwWindowHint(II)V", remap = false))
     private void windowHintOverride(int hint, int value) {
+        // Modifying OpenGL version
         if (hint == GLFW.GLFW_CONTEXT_VERSION_MAJOR) {
             value = 4;
             ThreatenGL.LOGGER.info("Threatened Minecraft to use GLFW_CONTEXT_VERSION_MAJOR " + value);
@@ -21,6 +22,13 @@ public class ThreatenGLMixin {
             value = 6;
             ThreatenGL.LOGGER.info("Threatened Minecraft to use GLFW_CONTEXT_VERSION_MINOR " + value);
         }
+
+        // random stuff that im testing here. will not count towards releases
+        /*if (hint == GLFW.GLFW_OPENGL_PROFILE) {
+            value = GLFW.GLFW_OPENGL_ANY_PROFILE;
+            ThreatenGL.LOGGER.info("Threatened Minecraft to use GLFW_OPENGL_PROFILE " + value);
+        }*/
+
         GLFW.glfwWindowHint(hint, value);
     }
 }
