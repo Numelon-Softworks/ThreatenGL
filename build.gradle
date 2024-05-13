@@ -1,7 +1,8 @@
 plugins {
 	id 'fabric-loom' version '1.6-SNAPSHOT'
 	id 'maven-publish'
-	id "com.github.johnrengelman.shadow" version "7.1.2"
+	// temporarily remove because unused. will use for forge porting later
+	//id "com.github.johnrengelman.shadow" version "7.1.2"
 }
 
 version = project.mod_version
@@ -38,6 +39,7 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
+	// its tempting to change this to a higher java version however java 16 is required for minecraft 1.17
 	it.options.release = 16
 }
 
@@ -47,6 +49,7 @@ java {
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
 
+	// its tempting to change this to a higher java version however java 16 is required for minecraft 1.17
 	sourceCompatibility = JavaVersion.VERSION_16
 	targetCompatibility = JavaVersion.VERSION_16
 }
