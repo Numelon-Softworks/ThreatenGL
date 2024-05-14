@@ -26,11 +26,13 @@ public class ThreatenGLMixin {
             LOGGER.info("Threatened Minecraft to use GLFW_CONTEXT_VERSION_MINOR " + value);
         }
 
+        /*
         // its interesting to see how OpenGL profiles work. will not count towards releases.
         if (hint == GLFW.GLFW_OPENGL_PROFILE) {
             value = GLFW.GLFW_OPENGL_ANY_PROFILE;
             LOGGER.info("Threatened Minecraft to use GLFW_OPENGL_PROFILE " + value);
         }
+        */
 
         GLFW.glfwWindowHint(hint, value);
     }
