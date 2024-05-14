@@ -4,15 +4,15 @@ import dev.architectury.platform.forge.EventBuses;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-import com.numelon.threatengl.ExampleMod;
+import com.numelon.threatengl.ThreatenGL;
 
-@Mod(ExampleMod.MOD_ID)
+@Mod(ThreatenGL.MOD_ID)
 public final class ExampleModForge {
     public ExampleModForge() {
         // Submit our event bus to let Architectury API register our content on the right time.
-        EventBuses.registerModEventBus(ExampleMod.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
+        EventBuses.registerModEventBus(ThreatenGL.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
 
         // Run our common setup.
-        ExampleMod.init();
+        ThreatenGL.init();
     }
 }
