@@ -12,10 +12,9 @@ public final class ThreatenGL {
 
     public static void init() {
         // Write common init code here.
-        LOGGER.info("bomboclart");
-        LOGGER.info("Hark! This mod doth seem to toil as expected! O, dear sire, rejoice! Muahaha!");
+        LOGGER.info("Hark! This numelon mod doth seem to toil as expected! O, dear sire, rejoice! How tremendous!");
 
         LOGGER.info("ThreatenGL will threaten Minecraft soon...");
-        LOGGER.info("Using GLFW Version " + GLFW.glfwGetVersionString() + ", not to be confused with OpenGL.");
+        LOGGER.info("Using GLFW Version " + GLFW.glfwGetVersionString() + ", not to be confused with OpenGL version.");
     }
 }
