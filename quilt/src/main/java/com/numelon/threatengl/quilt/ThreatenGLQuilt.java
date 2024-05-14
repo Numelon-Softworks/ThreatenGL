@@ -5,7 +5,7 @@ import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 
 import com.numelon.threatengl.ThreatenGL;
 
-public final class ExampleModQuilt implements ModInitializer {
+public final class ThreatenGLQuilt implements ModInitializer {
     @Override
     public void onInitialize(ModContainer mod) {
         // Run our common setup.
