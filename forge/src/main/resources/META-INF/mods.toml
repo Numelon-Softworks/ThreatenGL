@@ -33,7 +33,7 @@ side = "BOTH"
 
 [[dependencies.threatengl]]
 modId = "architectury"
-mandatory = false
+mandatory = true
 versionRange = "[11.1.17,)"
 ordering = "AFTER"
 side = "BOTH"
