@@ -1,5 +1,5 @@
 # 🤬 ThreatenGL
-A Minecraft Fabric, Quilt and Forge and NeoForge mod that ***threatens*** Minecraft's OpenGL to utilise version 4.6 instead of stinky, outdated 3.2, enhancing performance and leveraging modern graphics capabilities.
+A Minecraft Fabric, Quilt and Forge mod that ***threatens*** Minecraft's OpenGL to utilise version 4.6 instead of stinky, outdated 3.2, enhancing performance and leveraging modern graphics capabilities.
 
 > Minecraft: please... I'll do anything! 😰
 >
