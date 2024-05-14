@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "threatengl"
+version = "${version}"
+displayName = "ThreatenGL"
+authors = "Me!"
+description = '''
+This is an example description! Tell everyone what your mod is about!
+'''
+#logoFile = ""
+
+[[dependencies.threatengl]]
+modId = "neoforge"
+type = "required"
+versionRange = "[20.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.threatengl]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.20.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.threatengl]]
+modId = "architectury"
+type = "required"
+versionRange = "[11.1.17,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "threatengl.mixins.json"
