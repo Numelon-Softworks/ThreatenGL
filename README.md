@@ -30,6 +30,12 @@ This injected code intercepts the `glfwWindowHint` method of the GLFW library us
 
 When the `glfwWindowHint` method is called by Minecraft, this mod checks whether the OpenGL version is being set. If so, then we manually override this version to be set to 4.6.
 
+## 📥 Installing the Mod (Please read if you're using Quilt or Forge)
+- If you are using Quilt, you will have to [install the Quilted Fabric API (QFAPI)](https://modrinth.com/mod/qsl).
+- If you are using Forge, you will have to [install the Architectury API for Forge](https://modrinth.com/mod/architectury-api).
+
+Fabric and NeoForge work without any additional dependencies!
+
 ## ❗Notes
 This mod has undergone extensive testing to ensure that it is stable and won't explode your device. There are no issues so far, however, it is important to note that this is an experiment, as we are threatening Minecraft to use an OpenGL version that it is clearly not meant to run. ~~Mojang has their reasons for still using OpenGL 3.2, even in Minecraft 1.21 in 2024, but I don't really agree with them (mainly because I'm unaffected by the lack of backwards compatibility with newer OpenGL versions)~~
 

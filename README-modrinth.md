@@ -16,6 +16,12 @@ For a more detailed description of what this does, please visit the [GitHub repo
 ## ⚙️ How does it work?
 ThreatenGL works its magic by tinkering with Minecraft's internals. By injecting some code into the game's graphics setup process, it convinces Minecraft to opt for OpenGL 4.6 instead of the old 3.2. This simple tweak has the *potential* to make a difference in how the game performs.
 
+## 📥 Installing the Mod (Please read if you're using Quilt or Forge)
+- If you are using Quilt, you will have to [install the Quilted Fabric API (QFAPI)](https://modrinth.com/mod/qsl).
+- If you are using Forge, you will have to [install the Architectury API for Forge](https://modrinth.com/mod/architectury-api).
+
+Fabric and NeoForge work without any additional dependencies!
+
 ## ❗Notes
 ThreatenGL has been thoroughly tested to ensure it doesn't explore your device. However, please keep in mind that this is still an experiment and the efficacy of this mod is being actively researched and discussed. While many users have seen positive results, **your** results may vary depending on your setup.
 
