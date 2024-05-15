@@ -34,6 +34,8 @@ side = "BOTH"
 [[dependencies.threatengl]]
 modId = "architectury"
 mandatory = true
-versionRange = "[11.1.17,)"
+# architectury api 2.10.12 is the last version to support minecraft 1.17.1
+# versionRange = "[11.1.17,)"
+versionRange = "[2.10.12,)"
 ordering = "AFTER"
 side = "BOTH"
