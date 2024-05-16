@@ -11,7 +11,7 @@ authors = "Richy Z, Numelon"
 description = '''
 Threatens Minecraft to use a different version of OpenGL.
 '''
-logoFile = "assets/threatengl/threatengl-icon-notext-128.png"
+logoFile = "threatengl-icon-notext-128.png"
 modUrl = "https://modrinth.com/mod/threatengl"
 displayURL = "https://modrinth.com/mod/threatengl"
 

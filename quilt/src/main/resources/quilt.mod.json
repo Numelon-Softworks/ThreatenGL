@@ -23,7 +23,7 @@
 				"twitter": "https://twitter.com/Numelons"
 			},
 
-			"icon": "assets/threatengl/threatengl-icon-notext-128.png"
+			"icon": "threatengl-icon-notext-128.png"
 		},
 
 		"intermediate_mappings": "net.fabricmc:intermediary",
