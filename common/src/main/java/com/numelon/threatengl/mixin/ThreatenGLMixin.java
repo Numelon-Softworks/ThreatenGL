@@ -30,7 +30,7 @@ public class ThreatenGLMixin {
             // OpenGL stopped receiving support since OS X Mavericks (10.9) in favour of metal of course :heart_eyes:
             // if on macOS, use 4.1 instead of 4.6
             if (osName.contains("mac")) {
-                LOGGER.info("It looks like you're on macOS, which ditched OpenGL in 2013 in favour of Metal. The maximum supported version is 4.1, so that will be used instead of 4.6.");
+                LOGGER.info("It looks like you're on macOS, which ditched OpenGL in 2013 in favour of Metal. The maximum supported version is OpenGL 4.1.");
                 value = 1;
             } else {
                 // all other OSes
