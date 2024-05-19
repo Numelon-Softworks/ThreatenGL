@@ -7,9 +7,9 @@
 
 	"minVersion": "0.8",
 
-	"client": [],
+	"client": ["ThreatenGLMixin"],
 
-	"mixins": ["ThreatenGLMixin"],
+	"mixins": [],
 
 	"injectors": {
 		"defaultRequire": 1

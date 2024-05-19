@@ -23,7 +23,7 @@ type = "required"
 # Therefore we have to specify [20,) instead of [40,) otherwise that will invalidate future Minecraft releases and future NeoForge loader releases who have the new versioning system instead of the fml versioning system
 versionRange = "[20,)"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"
 
 [[dependencies.threatengl]]
 modId = "minecraft"
@@ -31,7 +31,7 @@ type = "required"
 # Note that NeoForged was created in July 2023 and thus does not have support before Minecraft 1.20.1
 versionRange = "[1.20.1,)"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"
 
 [[dependencies.threatengl]]
 modId = "architectury"
@@ -40,7 +40,7 @@ type = "optional"
 # however Forge specific versions are, and this is the last version supporting 1.20.1
 versionRange = "[9.2.14,)"
 ordering = "AFTER"
-side = "BOTH"
+side = "CLIENT"
 
 [[mixins]]
 config = "threatengl.mixins.json"

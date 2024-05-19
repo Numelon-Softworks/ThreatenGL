@@ -51,5 +51,9 @@
 		]
 	},
 
-	"mixin": ["threatengl.mixins.json"]
+	"mixin": ["threatengl.mixins.json"],
+
+	"minecraft": {
+		"environment": "client"
+	}
 }

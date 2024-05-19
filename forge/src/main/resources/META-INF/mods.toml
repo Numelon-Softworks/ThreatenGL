@@ -22,14 +22,14 @@ mandatory = true
 # Forge 1.17.1 and up (fml 37)
 versionRange = "[37,)"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"
 
 [[dependencies.threatengl]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.17,)"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"
 
 [[dependencies.threatengl]]
 modId = "architectury"
@@ -38,4 +38,4 @@ mandatory = true
 # versionRange = "[11.1.17,)"
 versionRange = "[2.10.12,)"
 ordering = "AFTER"
-side = "BOTH"
+side = "CLIENT"
