@@ -1,11 +1,9 @@
 {
 	"schema_version": 1,
-
 	"quilt_loader": {
 		"group": "${group}",
 		"id": "threatengl",
 		"version": "${version}",
-
 		"metadata": {
 			"name": "ThreatenGL",
 			"description": "Threatens Minecraft to use a different version of OpenGL.",
@@ -15,25 +13,28 @@
 			},
 			"contact": {
 				"homepage": "https://modrinth.com/mod/threatengl",
-
 				"sources": "https://github.com/Numelon-Softworks/ThreatenGL",
 				"issues": "https://github.com/Numelon-Softworks/ThreatenGL/issues",
-
 				"discord": "https://discord.gg/eYEDsnKh2T",
 				"twitter": "https://twitter.com/Numelons"
 			},
-
 			"icon": "threatengl-icon-notext-128.png"
 		},
-
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
 			"init": ["com.numelon.threatengl.quilt.ThreatenGLQuilt"]
 		},
-
 		"depends": [
 			{
 				"id": "quilt_loader",
+				"version": "*"
+			},
+			{
+				"id": "quilt_base",
+				"version": "*"
+			},
+			{
+				"id": "quilted_fabric_api",
 				"version": "*"
 			},
 			{
@@ -42,9 +43,7 @@
 			}
 		]
 	},
-
 	"mixin": ["threatengl.mixins.json"],
-
 	"minecraft": {
 		"environment": "client"
 	}

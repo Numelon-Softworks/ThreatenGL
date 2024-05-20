@@ -31,11 +31,11 @@ versionRange = "[1.17,)"
 ordering = "NONE"
 side = "CLIENT"
 
-[[dependencies.threatengl]]
-modId = "architectury"
-mandatory = true
+#[[dependencies.threatengl]]
+#modId = "architectury"
+#mandatory = false
 # architectury api 2.10.12 is the last version to support minecraft 1.17.1
 # versionRange = "[11.1.17,)"
-versionRange = "[2.10.12,)"
-ordering = "AFTER"
-side = "CLIENT"
+#versionRange = "[2.10.12,)"
+#ordering = "AFTER"
+#side = "CLIENT"

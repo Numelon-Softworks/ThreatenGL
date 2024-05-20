@@ -29,7 +29,7 @@
 		"sources": "https://github.com/Numelon-Softworks/ThreatenGL",
 		"issues": "https://github.com/Numelon-Softworks/ThreatenGL/issues",
 
-		"discord": "https://discord.gg/3eWzyjWWJc",
+		"discord": "https://discord.gg/eYEDsnKh2T",
 		"twitter": "https://twitter.com/Numelons"
 	},
 
@@ -37,7 +37,10 @@
 
 	"environment": "client",
 	"entrypoints": {
-		"main": ["com.numelon.threatengl.fabric.ThreatenGLFabric"]
+		"main": ["com.numelon.threatengl.fabric.ThreatenGLFabric"],
+		"client": [
+			"com.numelon.threatengl.fabric.client.ThreatenGLFabricClient"
+		]
 	},
 	"mixins": ["threatengl.mixins.json"],
 

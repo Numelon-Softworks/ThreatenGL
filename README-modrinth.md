@@ -23,15 +23,26 @@ For a more detailed description of what this does, please visit the [GitHub repo
 ## ⚙️ How does it work?
 ThreatenGL works its magic by tinkering with Minecraft's internals. By injecting some code into the game's graphics setup process, it convinces Minecraft to opt for OpenGL 4.6 instead of the old 3.2. This simple tweak has the *potential* to make a difference in how the game performs.
 
-## 📥 Installing the Mod (Please read if you're using Quilt or Forge)
+## 📥 Installing the Mod
+Installing this mod is as simple as putting it inside the `mods` directory of Minecraft.
+
+**Since 1.3.2-beta.1, ThreatenGL no longer requires any more additional libraries!**
+
+<details>
+<summary><b>Installing versions before 1.3.2-beta.1 (Not recommended)</b></summary>
+Please note that 1.3.1-beta.1 is completely broken on all platforms, do NOT use that version.
+
+If you really want to install an earlier version for some reason, there will be some dependencies:
+
 - If you are using Quilt, you will have to [install the Quilted Fabric API (QFAPI)](https://modrinth.com/mod/qsl).
 - If you are using Forge, you will have to [install the Architectury API for Forge](https://modrinth.com/mod/architectury-api).
 
-Fabric and NeoForge work without any additional dependencies!
+Fabric and NeoForge have always worked without any additional dependencies.
+</details>
 
 ## ❗Notes
 ThreatenGL has been thoroughly tested to ensure it doesn't explore your device. However, please keep in mind that this is still an experiment and the efficacy of this mod is being actively researched and discussed. While many users have seen positive results, **your** results may vary depending on your setup.
 
-If you encounter any issues, feel free to reach out by [posting an issue on GitHub](https://github.com/Numelon-Softworks/ThreatenGL/issues) or [joining the Discord Server](https://discord.gg/3eWzyjWWJc), and I'll do my best to assist you in any way I can! :)
+If you encounter any issues, feel free to reach out by [posting an issue on GitHub](https://github.com/Numelon-Softworks/ThreatenGL/issues) or [joining the Discord Server](https://discord.gg/eYEDsnKh2T), and I'll do my best to assist you in any way I can! :)
 
 **Have a great day/night, and enjoy this mod! 😊**

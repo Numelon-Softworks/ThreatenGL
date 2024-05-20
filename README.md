@@ -18,6 +18,11 @@ A Minecraft Fabric, Quilt, Forge and NeoForge mod that ***threatens*** Minecraft
 >
 > ThreatenGL: use version 4.6... or else..! 😡🔪
 
+
+<!-- 
+TODO: Talk about how Forge and NeoForge force OpenGL 4.6. This MUST have a reason, right?
+Why would some people care so much about this mod? Why the controversy?
+-->
 ## 🤨 Purpose of this mod
 ThreatenGL aims to explore the ***potential*** performance benefits of encouraging Minecraft to use OpenGL 4.6 instead of 3.2. While traditional wisdom may suggest that OpenGL versions are merely indicative of GPU capabilities (and I do agree), users have reported tangible performance improvements with ThreatenGL.
 
@@ -36,11 +41,22 @@ This injected code intercepts the `glfwWindowHint` method of the GLFW library us
 
 When the `glfwWindowHint` method is called by Minecraft, this mod checks whether the OpenGL version is being set. If so, then we manually override this version to be set to 4.6.
 
-## 📥 Installing the Mod (Please read if you're using Quilt or Forge)
+## 📥 Installing the Mod
+Installing this mod is as simple as putting it inside the `mods` directory of Minecraft.
+
+**Since 1.3.2-beta.1, ThreatenGL no longer requires any more additional libraries!**
+
+<details>
+<summary><b>Installing versions before 1.3.2-beta.1 (Not recommended)</b></summary>
+Please note that 1.3.1-beta.1 is completely broken on all platforms, do NOT use that version.
+
+If you really want to install an earlier version for some reason, there will be some dependencies:
+
 - If you are using Quilt, you will have to [install the Quilted Fabric API (QFAPI)](https://modrinth.com/mod/qsl).
 - If you are using Forge, you will have to [install the Architectury API for Forge](https://modrinth.com/mod/architectury-api).
 
-Fabric and NeoForge work without any additional dependencies!
+Fabric and NeoForge have always worked without any additional dependencies.
+</details>
 
 ## ❗Notes
 This mod has undergone extensive testing to ensure that it is stable and won't explode your device. There are no issues so far, however, it is important to note that this is an experiment, as we are threatening Minecraft to use an OpenGL version that it is clearly not meant to run. ~~Mojang has their reasons for still using OpenGL 3.2, even in Minecraft 1.21 in 2024, but I don't really agree with them (mainly because I'm unaffected by the lack of backwards compatibility with newer OpenGL versions)~~

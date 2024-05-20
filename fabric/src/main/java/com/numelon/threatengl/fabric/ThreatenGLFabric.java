@@ -2,6 +2,9 @@ package com.numelon.threatengl.fabric;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.api.EnvType;
+
 import com.numelon.threatengl.ThreatenGL;
 
 public final class ThreatenGLFabric implements ModInitializer {
@@ -11,7 +14,12 @@ public final class ThreatenGLFabric implements ModInitializer {
         // However, some things (like resources) may still be uninitialized.
         // Proceed with mild caution.
 
-        // Run our common setup.
-        ThreatenGL.init();
+        if (FabricLoader.getInstance().getEnvironmentType() == EnvType.SERVER) {
+            ThreatenGL.warnServer();
+            return;
+        }
+
+        // Moved to ThreatenGLFabricClient.java for client only run
+        //ThreatenGL.init();
     }
 }
