@@ -7,7 +7,8 @@ This description has been simplified to make it friendlier and easier to underst
 # 🤬 ThreatenGL
 Welcome to ThreatenGL!
 
-ThreatenGL is a Minecraft mod that takes a stand against the outdated OpenGL version 3.2, ***threatening*** Minecraft to use the more modern version 4.6. This change can potentially boost performance and make the most of your hardware's capabilities.
+ThreatenGL is a Minecraft mod that takes a stand against the outdated OpenGL version 3.2, ***threatening*** Minecraft to use the more modern version 4.6. This mod aims to explore the effects of this change.
+
 
 > Minecraft: "please... anything but that!" 😰
 >
@@ -16,12 +17,12 @@ ThreatenGL is a Minecraft mod that takes a stand against the outdated OpenGL ver
 [![ThreatenGL Banner](https://raw.githubusercontent.com/Numelon-Softworks/ThreatenGL/main/0-OtherFiles/Logo/Banner.png)](https://modrinth.com/mod/threatengl)
 
 ## 🤨 What's the deal?
-ThreatenGL is about enhancing your Minecraft experience. By ***threatening*** Minecraft to switch to OpenGL 4.6, this mod aims to unlock performance enhancements that might otherwise remain hidden. Users have reported smoother gameplay and better frame rates, especially on newer devices.
+ThreatenGL is about testing the effects of changing the OpenGL version, and potentially enhancing your experience. By ***threatening*** Minecraft to switch to OpenGL 4.6, this mod aims to investigate how OpenGL version changes affect the functioning of your GPU. Users have reported smoother gameplay and better frame rates, especially on newer devices.
 
-For a more detailed description of what this does, please visit the [GitHub repository](https://github.com/Numelon-Softworks/ThreatenGL). (Mod developers, please read this to avoid conflicts!)
+For a more detailed description of what this does, please visit the [GitHub repository](https://github.com/Numelon-Softworks/ThreatenGL). (Mod developers, please read this to understand the mod in-depth!)
 
 ## ⚙️ How does it work?
-ThreatenGL works its magic by tinkering with Minecraft's internals. By injecting some code into the game's graphics setup process, it convinces Minecraft to opt for OpenGL 4.6 instead of the old 3.2. This simple tweak has the *potential* to make a difference in how the game performs.
+ThreatenGL works its magic by tinkering with Minecraft's internals. By injecting some code into the game's graphics setup process, it convinces Minecraft to opt for OpenGL 4.6 instead of the old 3.2. This simple tweak has the *potential* to make a difference in how the game performs, as some GPU manufacturers like to use different, specific profiles for different OpenGL versions in their drivers. (I have no idea why they do that, but I'm guessing its for compatibility)
 
 ## 📥 Installing the Mod
 Installing this mod is as simple as putting it inside the `mods` directory of Minecraft.
@@ -39,6 +40,17 @@ If you really want to install an earlier version for some reason, there will be 
 
 Fabric and NeoForge have always worked without any additional dependencies.
 </details>
+
+## 🔒 Will this mod work for me?
+This mod will **NOT** do anything if your hardware does not support OpenGL 4.6.
+
+**On macOS**, this mod will force OpenGL 4.1 instead of 4.6 as Apple deprecated OpenGL in favour of Metal starting with macOS Mojave (10.14) and has not updated it since.
+
+The OpenGL 4.6 specification was released on July 31st, 2017. **Generally, this mod should work if:**
+- you have an Nvidia Graphics Card from 2012 and upwards (Nvidia Kepler and above are supported)
+- you have an AMD Graphics Card from 2012 and upwards (AMD GCN and above are supported)
+- you have any Graphics Card which currently actively receives driver updates
+- you have any Graphics Card which used to receive driver updates up until or after the release date of the OpenGL 4.6 specification
 
 ## ❗Notes
 ThreatenGL has been thoroughly tested to ensure it doesn't explore your device. However, please keep in mind that this is still an experiment and the efficacy of this mod is being actively researched and discussed. While many users have seen positive results, **your** results may vary depending on your setup.
