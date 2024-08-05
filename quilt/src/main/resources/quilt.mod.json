@@ -9,6 +9,9 @@
 		"metadata": {
 			"name": "ThreatenGL",
 			"description": "Threatens Minecraft to use a different version of OpenGL.",
+
+			"license": "LGPL-3.0-only",
+
 			"contributors": {
 				"Richy Z": "Lead Developer",
 				"Numelon": "Organisation"

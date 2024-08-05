@@ -2,7 +2,7 @@ modLoader = "javafml"
 # Forge 1.17.1 and up
 loaderVersion = "[37,)"
 issueTrackerURL = "https://github.com/Numelon-Softworks/ThreatenGL/issues"
-license = "Unknown"
+license = "LGPL-3.0-only"
 
 [[mods]]
 modId = "threatengl"
@@ -30,12 +30,3 @@ mandatory = true
 versionRange = "[1.17,)"
 ordering = "NONE"
 side = "CLIENT"
-
-#[[dependencies.threatengl]]
-#modId = "architectury"
-#mandatory = false
-# architectury api 2.10.12 is the last version to support minecraft 1.17.1
-# versionRange = "[11.1.17,)"
-#versionRange = "[2.10.12,)"
-#ordering = "AFTER"
-#side = "CLIENT"

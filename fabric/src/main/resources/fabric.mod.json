@@ -7,6 +7,8 @@
 	"name": "ThreatenGL",
 	"description": "Threatens Minecraft to use a different version of OpenGL.",
 
+	"license": "LGPL-3.0-only",
+
 	"authors": [
 		{
 			"name": "Richy Z",
@@ -49,8 +51,5 @@
 		"minecraft": ">=1.17",
 
 		"fabricloader": ">=0.15.11"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
