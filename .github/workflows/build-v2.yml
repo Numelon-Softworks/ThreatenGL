@@ -4,7 +4,7 @@
 # Removed if statement inside capture build artifacts because matrix.java will always be 21.
 # Cleaned up the yml file with better formatting and clear separation for better understanding.
 name: 🔨 Build ThreatenGL
-on: [pull_request, push]
+on: [pull_request, push, workflow_dispatch]
 
 jobs:
     build:
