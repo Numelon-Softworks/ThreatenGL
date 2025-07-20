@@ -2,6 +2,11 @@
 
 After another long period of inactivity due to being busy, I am excited to announce a major refresh and rebase of ThreatenGL. This update tackles the huge backlog of issues that were posted on GitHub, moderninses the codebase and fixes mod compatibility issues hopefully once and for all!
 
+## 🏠 GitHub repository change!!!
+The GitHub repository has now moved to [`Richy-Z/ThreatenGL`](https://github.com/Richy-Z/ThreatenGL). This should not affect users of the mod or listings on Modrinth or Curseforge.
+
+If you have the source code cloned using git, please remember to update the location of the remotes.
+
 ## 🤔 What's new?
 
 - Full support has been confirmed so far up to version 1.21.8
