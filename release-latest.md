@@ -1,25 +1,45 @@
-# We're back on Modrinth! 🥳
+# 🎉 ThreatenGL v2.0.4 - backlog be gone!
 
-After a challenging month (or maybe even more) of inactivity and a thorough moderation period, I'm thrilled to announce that **ThreatenGL** is back on Modrinth! I deeply appreciate the incredible support from the community on GitHub and Discord during this time. Your patience and encouragement have been incredibly valuable. 🤗
-
-And again like last time, as we celebrate the return of ThreatenGL, I want to extend another heartfelt thank you to everyone. We've now achieved 5.5K downloads and 82 followers. Your support means the world and is quite motivating. The most important thing however is the community - again, it has grown and I've managed to foster an incredibly supportive vibrant, and kind community. ☺️
+After another long period of inactivity due to being busy, I am excited to announce a major refresh and rebase of ThreatenGL. This update tackles the huge backlog of issues that were posted on GitHub, moderninses the codebase and fixes mod compatibility issues hopefully once and for all!
 
 ## 🤔 What's new?
 
-- I'm excited to share that ThreatenGL has now moved from the `beta` stage to the `release` stage.
-- **Modrinth**: ThreatenGL is finally back on Modrinth (Issue #14 ) 🥳
-- **License Update**: Mod information pages should now correctly display the license as the `LGPL-3.0-only` SPDX identifier, so it should no longer show "unknown license" in mod information screens.
-- **Minecraft 1.21 Compatibility**: After numerous requests, I've tested and verified that ThreatenGL works on Minecraft 1.21. This mod is now allowed to load on versions 1.21 and later, ensuring compatibility with the latest game updates.
+- Full support has been confirmed so far up to version 1.21.8
+    - Yes, this even includes NeoForge support, working from 1.20.2 all the way up to the latest version, which is 1.21.8 as of now!
+- NeoForge 1.20.1 is no longer supported - this version was basically Forge and rarely used. Additionally it bloated the `mods.toml` configuration with us having to support version maven versions `[40,)` (old NeoForge versioning scheme)
+- Early Loading Screen (and similar mods) have been identified as incompatible with ThreatenGL. There is now also an [incompatibility list](https://github.com/Richy-Z/ThreatenGL?tab=readme-ov-file#incompatibility-with-other-mods) on the README in the GitHub.
+- Internal package paths have been renamed to `lol.richy.*`, reflecting true ownership of the mod after we recently had some organisational changes.
 
 ### 🐞 Bug Fixes
 
-- **NeoForge Compatibility**: I've addressed a critical bug that affected NeoForge users, who encountered the "not a valid mod file" error. This issue was because of changes in (Neo)Forge's `mods.toml` file structure or naming conventions. With this fix, NeoForge users can finally enjoy a seamless experience again. ( Issue #13 )
+- NeoForge users should no longer encounter "invalid mod file" errors. This was due to conflicting `mods.toml` and `neoforge.mods.toml` behaviour, which have now been resolved.
 
-**Full Changelog**: <https://github.com/Richy-Z/ThreatenGL/compare/1.3.2-beta.1...1.3.3-release.1>
+### 👻  *"Invisible Changes"*
+
+The changes below are changes made to the source repository that should not normally affect your gameplay or usage of the mod. This information is aimed more towards developers who want to look at the source repository:
+
+- Some portions of the source code have been reorganised or rewritten for clarity, however this should not affect the results you receive from the mod.
+- The Architectury API is no longer required, it is now only used as a gradle base for cross-loader compatibility in the entire project.
+- Switched to a modern gradle wrapper verification action, since the old one has been deprecated.
+- The build pipeline has been modified a bit
+- The repository has been made ready to transfer to `Richy-Z/ThreatenGL` (keep in mind that this announcement is likely being posted before the transfer happens)
+- READMEs and descriptions have been cleaned up a bit. The GitHub README is now closer to the Modrinth README for consistency and to remove some bloat.
+
+### 📌 Resolved GitHub issues
+
+- [#27](https://github.com/Numelon-Softworks/ThreatenGL/issues/27): A mod incompatibility list has now been created.
+- [#18](https://github.com/Numelon-Softworks/ThreatenGL/issues/18): NeoForge 1.20.1 support has been dropped.
+- [#22](https://github.com/Numelon-Softworks/ThreatenGL/issues/22): 1.21.4 is properly supported.
+- [#24](https://github.com/Numelon-Softworks/ThreatenGL/issues/24): NeoForge compatibility issues have been fixed for all versions.
+- [#28](https://github.com/Numelon-Softworks/ThreatenGL/issues/28): 1.21.7 is now supported.
+- [#29](https://github.com/Numelon-Softworks/ThreatenGL/issues/29): 1.21.6 is now supported.
+- [#31](https://github.com/Numelon-Softworks/ThreatenGL/issues/31): 1.21.8 is now supported.
 
 Thanks to the amazing community who reported these issues promptly! 💖
+> And again, an apology from me for being so slow to respond to them.
 
 ----------
+
 **Since 1.3.2-beta.1, ThreatenGL no longer requires any additional libraries to work! This reduces mod conflicts and incompatibilities.**
 
 ## 💃 psst... join the community <3
