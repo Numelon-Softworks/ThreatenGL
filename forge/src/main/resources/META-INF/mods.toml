@@ -1,25 +1,21 @@
 modLoader = "javafml"
-# Forge 1.17.1 and up
 loaderVersion = "[37,)"
-issueTrackerURL = "https://github.com/Numelon-Softworks/ThreatenGL/issues"
+#loaderVersion = "[49,)"
+issueTrackerURL = "https://github.com/Richy-Z/ThreatenGL/issues"
 license = "LGPL-3.0-only"
 
 [[mods]]
 modId = "threatengl"
 version = "${version}"
 displayName = "ThreatenGL"
-authors = "Richy Z, Numelon"
-description = '''
-Threatens Minecraft to use a different version of OpenGL.
-'''
+authors = "Richy Z."
+description = "Threatens Minecraft to use a different version of OpenGL."
 logoFile = "threatengl-icon-notext-128.png"
-modUrl = "https://modrinth.com/mod/threatengl"
 displayURL = "https://modrinth.com/mod/threatengl"
 
 [[dependencies.threatengl]]
 modId = "forge"
 mandatory = true
-# Forge 1.17.1 and up (fml 37)
 versionRange = "[37,)"
 ordering = "NONE"
 side = "CLIENT"

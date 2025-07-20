@@ -1,55 +1,49 @@
 {
-	"schemaVersion": 1,
+  "schemaVersion": 1,
 
-	"id": "threatengl",
-	"version": "${version}",
+  "id": "threatengl",
+  "version": "${version}",
 
-	"name": "ThreatenGL",
-	"description": "Threatens Minecraft to use a different version of OpenGL.",
+  "name": "ThreatenGL",
+  "description": "Threatens Minecraft to use a different version of OpenGL.",
 
-	"license": "LGPL-3.0-only",
+  "authors": [
+    {
+      "name": "Richy Z.",
+      "contact": {
+        "homepage": "https://richy.lol"
+      }
+    }
+  ],
 
-	"authors": [
-		{
-			"name": "Richy Z",
-			"contact": {
-				"homepage": "https://github.com/Richy-Z"
-			}
-		},
-		{
-			"name": "Numelon",
-			"contact": {
-				"homepage": "https://numelon.com/",
-				"email": "support@numelon.com",
-				"twitter": "https://twitter.com/Numelons"
-			}
-		}
-	],
-	"contact": {
-		"homepage": "https://modrinth.com/mod/threatengl",
+  "contact": {
+    "homepage": "https://modrinth.com/mod/threatengl",
 
-		"sources": "https://github.com/Numelon-Softworks/ThreatenGL",
-		"issues": "https://github.com/Numelon-Softworks/ThreatenGL/issues",
+    "sources": "https://github.com/Richy-Z/ThreatenGL",
+    "issues": "https://github.com/Richy-Z/ThreatenGL/issues",
 
-		"discord": "https://discord.gg/eYEDsnKh2T",
-		"twitter": "https://twitter.com/Numelons"
-	},
+    "discord": "https://discord.gg/eYEDsnKh2T"
+  },
 
-	"icon": "threatengl-icon-notext-128.png",
+  "license": "LGPL-3.0-only",
+  "icon": "threatengl-icon-notext-128.png",
 
-	"environment": "client",
-	"entrypoints": {
-		"main": ["com.numelon.threatengl.fabric.ThreatenGLFabric"],
-		"client": [
-			"com.numelon.threatengl.fabric.client.ThreatenGLFabricClient"
-		]
-	},
-	"mixins": ["threatengl.mixins.json"],
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "lol.richy.threatengl.fabric.ThreatenGLFabric"
+    ],
+    "client": [
+      "lol.richy.threatengl.fabric.client.ThreatenGLFabricClient"
+    ]
+  },
+  "mixins": [
+    "threatengl.mixins.json"
+  ],
 
-	"depends": {
-		"java": ">=16",
-		"minecraft": ">=1.17",
-
-		"fabricloader": ">=0.15.11"
-	}
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": ">=1.17",
+    "java": ">=16"
+  }
 }

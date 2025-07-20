@@ -1,11 +1,10 @@
-package com.numelon.threatengl.fabric;
+package lol.richy.threatengl.fabric;
 
+import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ModInitializer;
 
+import lol.richy.threatengl.ThreatenGL;
 import net.fabricmc.loader.api.FabricLoader;
-import net.fabricmc.api.EnvType;
-
-import com.numelon.threatengl.ThreatenGL;
 
 public final class ThreatenGLFabric implements ModInitializer {
     @Override
@@ -19,7 +18,7 @@ public final class ThreatenGLFabric implements ModInitializer {
             return;
         }
 
-        // Moved to ThreatenGLFabricClient.java for client only run
+        // common moved to ThreatenGLFabricClient
         //ThreatenGL.init();
     }
 }
