@@ -32,13 +32,13 @@ The changes below are changes made to the source repository that should not norm
 
 ### 📌 Resolved GitHub issues
 
-- [#27](https://github.com/Numelon-Softworks/ThreatenGL/issues/27): A mod incompatibility list has now been created.
-- [#18](https://github.com/Numelon-Softworks/ThreatenGL/issues/18): NeoForge 1.20.1 support has been dropped.
-- [#22](https://github.com/Numelon-Softworks/ThreatenGL/issues/22): 1.21.4 is properly supported.
-- [#24](https://github.com/Numelon-Softworks/ThreatenGL/issues/24): NeoForge compatibility issues have been fixed for all versions.
-- [#28](https://github.com/Numelon-Softworks/ThreatenGL/issues/28): 1.21.7 is now supported.
-- [#29](https://github.com/Numelon-Softworks/ThreatenGL/issues/29): 1.21.6 is now supported.
-- [#31](https://github.com/Numelon-Softworks/ThreatenGL/issues/31): 1.21.8 is now supported.
+- [#27](https://github.com/Richy-Z/ThreatenGL/issues/27): A mod incompatibility list has now been created.
+- [#18](https://github.com/Richy-Z/ThreatenGL/issues/18): NeoForge 1.20.1 support has been dropped.
+- [#22](https://github.com/Richy-Z/ThreatenGL/issues/22): 1.21.4 is properly supported.
+- [#24](https://github.com/Richy-Z/ThreatenGL/issues/24): NeoForge compatibility issues have been fixed for all versions.
+- [#28](https://github.com/Richy-Z/ThreatenGL/issues/28): 1.21.7 is now supported.
+- [#29](https://github.com/Richy-Z/ThreatenGL/issues/29): 1.21.6 is now supported.
+- [#31](https://github.com/Richy-Z/ThreatenGL/issues/31): 1.21.8 is now supported.
 
 Thanks to the amazing community who reported these issues promptly! 💖
 > And again, an apology from me for being so slow to respond to them.
@@ -52,5 +52,5 @@ Thanks to the amazing community who reported these issues promptly! 💖
 Interested in other grand projects or updates for this mod? [Join my Discord server](https://discord.gg/eYEDsnKh2T) for sneak peeks, discussions, and exciting announcements, and to interact with the vibrant and kind community!
 
 ## What's Changed
-* Version 2.0.4 by @Richy-Z in https://github.com/Numelon-Softworks/ThreatenGL/pull/32
-* **Full Changelog**: https://github.com/Numelon-Softworks/ThreatenGL/compare/1.3.3-release.1...2.0.4-release.9
+* Version 2.0.4 by @Richy-Z in https://github.com/Richy-Z/ThreatenGL/pull/32
+* **Full Changelog**: https://github.com/Richy-Z/ThreatenGL/compare/1.3.3-release.1...2.0.4-release.9
