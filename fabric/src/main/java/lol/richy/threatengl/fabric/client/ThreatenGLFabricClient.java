@@ -1,15 +1,14 @@
-package com.numelon.threatengl.fabric.client;
+package lol.richy.threatengl.fabric.client;
 
+import lol.richy.threatengl.ThreatenGL;
 import net.fabricmc.api.ClientModInitializer;
-
-import com.numelon.threatengl.ThreatenGL;
 
 public final class ThreatenGLFabricClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         // This entrypoint is suitable for setting up client-specific logic, such as rendering.
 
-        // Initialise on client only
+        // init on client only
         ThreatenGL.init();
     }
 }

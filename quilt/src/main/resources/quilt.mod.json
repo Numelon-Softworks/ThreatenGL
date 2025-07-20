@@ -1,54 +1,55 @@
 {
-	"schema_version": 1,
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "threatengl",
+    "version": "${version}",
 
-	"quilt_loader": {
-		"group": "${group}",
-		"id": "threatengl",
-		"version": "${version}",
+    "metadata": {
+      "name": "ThreatenGL",
+      "description": "Threatens Minecraft to use a different version of OpenGL.",
 
-		"metadata": {
-			"name": "ThreatenGL",
-			"description": "Threatens Minecraft to use a different version of OpenGL.",
+      "icon": "threatengl-icon-notext-128.png",
 
-			"license": "LGPL-3.0-only",
+      "contributors": {
+        "Richy Z.": "Developer"
+      },
 
-			"contributors": {
-				"Richy Z": "Lead Developer",
-				"Numelon": "Organisation"
-			},
-			"contact": {
-				"homepage": "https://modrinth.com/mod/threatengl",
+      "contact": {
+        "homepage": "https://modrinth.com/mod/threatengl",
 
-				"sources": "https://github.com/Numelon-Softworks/ThreatenGL",
-				"issues": "https://github.com/Numelon-Softworks/ThreatenGL/issues",
+        "sources": "https://github.com/Richy-Z/ThreatenGL",
+        "issues": "https://github.com/Richy-Z/ThreatenGL/issues"
+      },
 
-				"discord": "https://discord.gg/eYEDsnKh2T",
-				"twitter": "https://twitter.com/Numelons"
-			},
+      "license": "LGPL-3.0-only"
+    },
 
-			"icon": "threatengl-icon-notext-128.png"
-		},
+    "intermediate_mappings": "net.fabricmc:intermediary",
 
-		"intermediate_mappings": "net.fabricmc:intermediary",
-		"entrypoints": {
-			"init": ["com.numelon.threatengl.quilt.ThreatenGLQuilt"]
-		},
+    "entrypoints": {
+      "init": [
+        "lol.richy.threatengl.quilt.ThreatenGLQuilt"
+      ]
+    },
 
-		"depends": [
-			{
-				"id": "quilt_loader",
-				"version": "*"
-			},
-			{
-				"id": "minecraft",
-				"version": ">=1.17"
-			}
-		]
-	},
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.17"
+      }
+    ]
+  },
 
-	"mixin": ["threatengl.mixins.json"],
+  "mixin": [
+    "threatengl.mixins.json"
+  ],
 
-	"minecraft": {
-		"environment": "client"
-	}
+  "minecraft": {
+    "environment": "client"
+  }
 }

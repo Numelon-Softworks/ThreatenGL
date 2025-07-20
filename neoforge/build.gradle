@@ -1,5 +1,5 @@
 plugins {
-    id 'com.github.johnrengelman.shadow'
+    id 'com.gradleup.shadow'
 }
 
 architectury {
@@ -34,10 +34,6 @@ repositories {
 dependencies {
     neoForge "net.neoforged:neoforge:$rootProject.neoforge_version"
 
-    // Architectury API. This is optional, and you can comment it out if you don't need it.
-    // commented out to remove architectury api dependency. self sufficiency.
-    //modImplementation "dev.architectury:architectury-neoforge:$rootProject.architectury_api_version"
-
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
 }
@@ -49,7 +45,6 @@ processResources {
         expand version: project.version
     }
 
-    // this will be used when one day the mod will be used with 1.20.6
     filesMatching('META-INF/neoforge.mods.toml') {
         expand version: project.version
     }
@@ -61,5 +56,5 @@ shadowJar {
 }
 
 remapJar {
-    input.set shadowJar.archiveFile
+    inputFile.set shadowJar.archiveFile
 }
