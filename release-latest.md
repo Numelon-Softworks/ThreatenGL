@@ -50,3 +50,7 @@ Thanks to the amazing community who reported these issues promptly! 💖
 ## 💃 psst... join the community <3
 
 Interested in other grand projects or updates for this mod? [Join my Discord server](https://discord.gg/eYEDsnKh2T) for sneak peeks, discussions, and exciting announcements, and to interact with the vibrant and kind community!
+
+## What's Changed
+* Version 2.0.4 by @Richy-Z in https://github.com/Numelon-Softworks/ThreatenGL/pull/32
+* **Full Changelog**: https://github.com/Numelon-Softworks/ThreatenGL/compare/1.3.3-release.1...2.0.4-release.9
